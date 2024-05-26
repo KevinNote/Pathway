@@ -1,6 +1,6 @@
 ```mermaid
 ---
-title: KevinZonda's
+title: KevinZonda's Learning Pathway
 ---
 flowchart LR
   subgraph UOB[U BHAM B.Sc. Computer Science]
