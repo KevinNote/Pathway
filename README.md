@@ -17,6 +17,7 @@ flowchart LR
       direction TB
       OX_IntroUniMath[OX: Introduction to<br>University Mathematics]
       OX_LinearAlg1[OX: Linear Algebra I]
+      OX_Analysis1[OX: Analysis I<br>Sequences and Series]
     end
   end
 
@@ -35,6 +36,7 @@ flowchart LR
   CMU_Parallel -.-> MIT_DistSys
 
   UOB --> OX_IntroUniMath
+
   OX_IntroUniMath -.-> OX_LinearAlg1
   OX_IntroUniMath -.-> PKU_MathAnalysis
   
