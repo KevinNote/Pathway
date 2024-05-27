@@ -12,7 +12,15 @@ flowchart LR
     S_CVDL ~~~ S_NLP
   end
 
-  OX_IntroUniMath[OX: Introduction to<br>University Mathematics]
+  subgraph OX_M_Y1["U OX B.A. Mathematics Y1 (Prelims)"]
+    subgraph OX_M_Y1_T1[Michaelmas Term]
+      direction TB
+      OX_IntroUniMath[OX: Introduction to<br>University Mathematics]
+      OX_LinearAlg1[OX: Linear Algebra I]
+    end
+  end
+
+  
   PKU_MathAnalysis[PKU: 数学分析<br>aka. 高等数学]
   
   NTHU_Parallel[NTHU 10710：平行程式]
@@ -26,7 +34,8 @@ flowchart LR
   NTHU_Parallel -.-> MIT_DistSys
   CMU_Parallel -.-> MIT_DistSys
 
-  UOB -.-> OX_IntroUniMath
+  UOB --> OX_IntroUniMath
+  OX_IntroUniMath -.-> OX_LinearAlg1
   OX_IntroUniMath -.-> PKU_MathAnalysis
   
 ```
